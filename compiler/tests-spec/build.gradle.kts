@@ -24,7 +24,7 @@ val printSpecTestsStatistic by generator("org.jetbrains.kotlin.spec.tasks.PrintS
 
 val generateJsonTestsMap by generator("org.jetbrains.kotlin.spec.tasks.GenerateJsonTestsMapKt")
 
-project.tasks.create("distTest") {
+project.tasks.create("remoteRunTests") {
     val packagePrefix = "org.jetbrains.kotlin."
     val includeTests = setOf(
         "checkers.DiagnosticsTestSpecGenerated\$NotLinked\$Contracts"
